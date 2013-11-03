@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		640ED9E4619742A79300A1E2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FD83BCDDE94D7380F4B8F5 /* libPods.a */; };
+		E288C2DF182560920044F2B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E288C2DE182560920044F2B2 /* Foundation.framework */; };
+		E288C2E1182560920044F2B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E288C2E0182560920044F2B2 /* CoreGraphics.framework */; };
+		E288C2E3182560920044F2B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E288C2E2182560920044F2B2 /* UIKit.framework */; };
+		E288C2E9182560920044F2B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E288C2E7182560920044F2B2 /* InfoPlist.strings */; };
+		E288C2EB182560920044F2B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E288C2EA182560920044F2B2 /* main.m */; };
+		E288C2EF182560920044F2B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E288C2EE182560920044F2B2 /* AppDelegate.m */; };
+		E288C2F2182560920044F2B2 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E288C2F0182560920044F2B2 /* Main_iPhone.storyboard */; };
+		E288C2F5182560920044F2B2 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E288C2F3182560920044F2B2 /* Main_iPad.storyboard */; };
+		E288C2F8182560920044F2B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E288C2F7182560920044F2B2 /* ViewController.m */; };
+		E288C2FA182560920044F2B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E288C2F9182560920044F2B2 /* Images.xcassets */; };
+		E288C301182560920044F2B2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E288C300182560920044F2B2 /* XCTest.framework */; };
+		E288C302182560920044F2B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E288C2DE182560920044F2B2 /* Foundation.framework */; };
+		E288C303182560920044F2B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E288C2E2182560920044F2B2 /* UIKit.framework */; };
+		E288C30B182560920044F2B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E288C309182560920044F2B2 /* InfoPlist.strings */; };
+		E288C30D182560920044F2B2 /* QMBParallaxScrollView_SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E288C30C182560920044F2B2 /* QMBParallaxScrollView_SampleTests.m */; };
+		E288C31D182576470044F2B2 /* QMBParallaxScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E288C31C182576470044F2B2 /* QMBParallaxScrollViewController.m */; };
+		E288C32018257BCD0044F2B2 /* SampleScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E288C31F18257BCD0044F2B2 /* SampleScrollViewController.m */; };
+		E288C32318257BDE0044F2B2 /* SampleTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E288C32218257BDE0044F2B2 /* SampleTopViewController.m */; };
+		E288C32A18259F740044F2B2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E288C32918259F740044F2B2 /* MapKit.framework */; };
+		E288C3371825B0D60044F2B2 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C32D1825B0D60044F2B2 /* 1.png */; };
+		E288C3381825B0D60044F2B2 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C32E1825B0D60044F2B2 /* 2.png */; };
+		E288C3391825B0D60044F2B2 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C32F1825B0D60044F2B2 /* 3.png */; };
+		E288C33A1825B0D60044F2B2 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C3301825B0D60044F2B2 /* 4.png */; };
+		E288C33B1825B0D60044F2B2 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C3311825B0D60044F2B2 /* 5.png */; };
+		E288C33C1825B0D60044F2B2 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C3321825B0D60044F2B2 /* 6.png */; };
+		E288C33D1825B0D60044F2B2 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C3331825B0D60044F2B2 /* 7.png */; };
+		E288C33E1825B0D60044F2B2 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C3341825B0D60044F2B2 /* 8.png */; };
+		E288C33F1825B0D60044F2B2 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C3351825B0D60044F2B2 /* 9.png */; };
+		E288C3401825B0D60044F2B2 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C3361825B0D60044F2B2 /* 10.png */; };
+		E288C3431826B5A10044F2B2 /* SampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E288C3421826B5A10044F2B2 /* SampleTableViewController.m */; };
+		E288C346182714330044F2B2 /* UIViewController+QMBParallaxScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E288C345182714330044F2B2 /* UIViewController+QMBParallaxScrollViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E288C304182560920044F2B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E288C2D3182560920044F2B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E288C2DA182560920044F2B2;
+			remoteInfo = "QMBParallaxScrollView-Sample";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52FD83BCDDE94D7380F4B8F5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7E6630317544A2ABF428A4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E288C2DB182560920044F2B2 /* QMBParallaxScrollView-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QMBParallaxScrollView-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E288C2DE182560920044F2B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E288C2E0182560920044F2B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E288C2E2182560920044F2B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E288C2E6182560920044F2B2 /* QMBParallaxScrollView-Sample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QMBParallaxScrollView-Sample-Info.plist"; sourceTree = "<group>"; };
+		E288C2E8182560920044F2B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E288C2EA182560920044F2B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E288C2EC182560920044F2B2 /* QMBParallaxScrollView-Sample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QMBParallaxScrollView-Sample-Prefix.pch"; sourceTree = "<group>"; };
+		E288C2ED182560920044F2B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E288C2EE182560920044F2B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E288C2F1182560920044F2B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		E288C2F4182560920044F2B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		E288C2F6182560920044F2B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E288C2F7182560920044F2B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E288C2F9182560920044F2B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E288C2FF182560920044F2B2 /* QMBParallaxScrollView-SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QMBParallaxScrollView-SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E288C300182560920044F2B2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E288C308182560920044F2B2 /* QMBParallaxScrollView-SampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QMBParallaxScrollView-SampleTests-Info.plist"; sourceTree = "<group>"; };
+		E288C30A182560920044F2B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E288C30C182560920044F2B2 /* QMBParallaxScrollView_SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QMBParallaxScrollView_SampleTests.m; sourceTree = "<group>"; };
+		E288C31B182576470044F2B2 /* QMBParallaxScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMBParallaxScrollViewController.h; path = ../QMBParallaxScrollViewController/QMBParallaxScrollViewController.h; sourceTree = "<group>"; };
+		E288C31C182576470044F2B2 /* QMBParallaxScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMBParallaxScrollViewController.m; path = ../QMBParallaxScrollViewController/QMBParallaxScrollViewController.m; sourceTree = "<group>"; };
+		E288C31E18257BCD0044F2B2 /* SampleScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleScrollViewController.h; sourceTree = "<group>"; };
+		E288C31F18257BCD0044F2B2 /* SampleScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleScrollViewController.m; sourceTree = "<group>"; };
+		E288C32118257BDE0044F2B2 /* SampleTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTopViewController.h; sourceTree = "<group>"; };
+		E288C32218257BDE0044F2B2 /* SampleTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTopViewController.m; sourceTree = "<group>"; };
+		E288C32918259F740044F2B2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E288C32D1825B0D60044F2B2 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = Resources/ParallaxBackgrounds/1.png; sourceTree = "<group>"; };
+		E288C32E1825B0D60044F2B2 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = Resources/ParallaxBackgrounds/2.png; sourceTree = "<group>"; };
+		E288C32F1825B0D60044F2B2 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = Resources/ParallaxBackgrounds/3.png; sourceTree = "<group>"; };
+		E288C3301825B0D60044F2B2 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = Resources/ParallaxBackgrounds/4.png; sourceTree = "<group>"; };
+		E288C3311825B0D60044F2B2 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 5.png; path = Resources/ParallaxBackgrounds/5.png; sourceTree = "<group>"; };
+		E288C3321825B0D60044F2B2 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 6.png; path = Resources/ParallaxBackgrounds/6.png; sourceTree = "<group>"; };
+		E288C3331825B0D60044F2B2 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 7.png; path = Resources/ParallaxBackgrounds/7.png; sourceTree = "<group>"; };
+		E288C3341825B0D60044F2B2 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 8.png; path = Resources/ParallaxBackgrounds/8.png; sourceTree = "<group>"; };
+		E288C3351825B0D60044F2B2 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 9.png; path = Resources/ParallaxBackgrounds/9.png; sourceTree = "<group>"; };
+		E288C3361825B0D60044F2B2 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 10.png; path = Resources/ParallaxBackgrounds/10.png; sourceTree = "<group>"; };
+		E288C3411826B5A10044F2B2 /* SampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewController.h; sourceTree = "<group>"; };
+		E288C3421826B5A10044F2B2 /* SampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewController.m; sourceTree = "<group>"; };
+		E288C344182714330044F2B2 /* UIViewController+QMBParallaxScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+QMBParallaxScrollViewController.h"; path = "../QMBParallaxScrollViewController/UIViewController+QMBParallaxScrollViewController.h"; sourceTree = "<group>"; };
+		E288C345182714330044F2B2 /* UIViewController+QMBParallaxScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+QMBParallaxScrollViewController.m"; path = "../QMBParallaxScrollViewController/UIViewController+QMBParallaxScrollViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E288C2D8182560920044F2B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E288C32A18259F740044F2B2 /* MapKit.framework in Frameworks */,
+				E288C2E1182560920044F2B2 /* CoreGraphics.framework in Frameworks */,
+				E288C2E3182560920044F2B2 /* UIKit.framework in Frameworks */,
+				E288C2DF182560920044F2B2 /* Foundation.framework in Frameworks */,
+				640ED9E4619742A79300A1E2 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E288C2FC182560920044F2B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E288C301182560920044F2B2 /* XCTest.framework in Frameworks */,
+				E288C303182560920044F2B2 /* UIKit.framework in Frameworks */,
+				E288C302182560920044F2B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E288C2D2182560920044F2B2 = {
+			isa = PBXGroup;
+			children = (
+				E288C31A182575DD0044F2B2 /* QMBParallaxScrollViewController */,
+				E288C2E4182560920044F2B2 /* QMBParallaxScrollView-Sample */,
+				E288C306182560920044F2B2 /* QMBParallaxScrollView-SampleTests */,
+				E288C2DD182560920044F2B2 /* Frameworks */,
+				E288C2DC182560920044F2B2 /* Products */,
+				DC7E6630317544A2ABF428A4 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		E288C2DC182560920044F2B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E288C2DB182560920044F2B2 /* QMBParallaxScrollView-Sample.app */,
+				E288C2FF182560920044F2B2 /* QMBParallaxScrollView-SampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E288C2DD182560920044F2B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E288C32918259F740044F2B2 /* MapKit.framework */,
+				E288C2DE182560920044F2B2 /* Foundation.framework */,
+				E288C2E0182560920044F2B2 /* CoreGraphics.framework */,
+				E288C2E2182560920044F2B2 /* UIKit.framework */,
+				E288C300182560920044F2B2 /* XCTest.framework */,
+				52FD83BCDDE94D7380F4B8F5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E288C2E4182560920044F2B2 /* QMBParallaxScrollView-Sample */ = {
+			isa = PBXGroup;
+			children = (
+				E288C2ED182560920044F2B2 /* AppDelegate.h */,
+				E288C2EE182560920044F2B2 /* AppDelegate.m */,
+				E288C2F0182560920044F2B2 /* Main_iPhone.storyboard */,
+				E288C2F3182560920044F2B2 /* Main_iPad.storyboard */,
+				E288C2F6182560920044F2B2 /* ViewController.h */,
+				E288C2F7182560920044F2B2 /* ViewController.m */,
+				E288C2F9182560920044F2B2 /* Images.xcassets */,
+				E288C32B1825B0880044F2B2 /* Resources */,
+				E288C2E5182560920044F2B2 /* Supporting Files */,
+				E288C31E18257BCD0044F2B2 /* SampleScrollViewController.h */,
+				E288C31F18257BCD0044F2B2 /* SampleScrollViewController.m */,
+				E288C32118257BDE0044F2B2 /* SampleTopViewController.h */,
+				E288C32218257BDE0044F2B2 /* SampleTopViewController.m */,
+				E288C3411826B5A10044F2B2 /* SampleTableViewController.h */,
+				E288C3421826B5A10044F2B2 /* SampleTableViewController.m */,
+			);
+			path = "QMBParallaxScrollView-Sample";
+			sourceTree = "<group>";
+		};
+		E288C2E5182560920044F2B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E288C2E6182560920044F2B2 /* QMBParallaxScrollView-Sample-Info.plist */,
+				E288C2E7182560920044F2B2 /* InfoPlist.strings */,
+				E288C2EA182560920044F2B2 /* main.m */,
+				E288C2EC182560920044F2B2 /* QMBParallaxScrollView-Sample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E288C306182560920044F2B2 /* QMBParallaxScrollView-SampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E288C30C182560920044F2B2 /* QMBParallaxScrollView_SampleTests.m */,
+				E288C307182560920044F2B2 /* Supporting Files */,
+			);
+			path = "QMBParallaxScrollView-SampleTests";
+			sourceTree = "<group>";
+		};
+		E288C307182560920044F2B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E288C308182560920044F2B2 /* QMBParallaxScrollView-SampleTests-Info.plist */,
+				E288C309182560920044F2B2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E288C31A182575DD0044F2B2 /* QMBParallaxScrollViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E288C344182714330044F2B2 /* UIViewController+QMBParallaxScrollViewController.h */,
+				E288C345182714330044F2B2 /* UIViewController+QMBParallaxScrollViewController.m */,
+				E288C31B182576470044F2B2 /* QMBParallaxScrollViewController.h */,
+				E288C31C182576470044F2B2 /* QMBParallaxScrollViewController.m */,
+			);
+			name = QMBParallaxScrollViewController;
+			sourceTree = "<group>";
+		};
+		E288C32B1825B0880044F2B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E288C32C1825B0940044F2B2 /* ParallaxBackgrounds */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E288C32C1825B0940044F2B2 /* ParallaxBackgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				E288C32D1825B0D60044F2B2 /* 1.png */,
+				E288C32E1825B0D60044F2B2 /* 2.png */,
+				E288C32F1825B0D60044F2B2 /* 3.png */,
+				E288C3301825B0D60044F2B2 /* 4.png */,
+				E288C3311825B0D60044F2B2 /* 5.png */,
+				E288C3321825B0D60044F2B2 /* 6.png */,
+				E288C3331825B0D60044F2B2 /* 7.png */,
+				E288C3341825B0D60044F2B2 /* 8.png */,
+				E288C3351825B0D60044F2B2 /* 9.png */,
+				E288C3361825B0D60044F2B2 /* 10.png */,
+			);
+			name = ParallaxBackgrounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E288C2DA182560920044F2B2 /* QMBParallaxScrollView-Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E288C310182560920044F2B2 /* Build configuration list for PBXNativeTarget "QMBParallaxScrollView-Sample" */;
+			buildPhases = (
+				C6396F9AC2784658A2482438 /* Check Pods Manifest.lock */,
+				E288C2D7182560920044F2B2 /* Sources */,
+				E288C2D8182560920044F2B2 /* Frameworks */,
+				E288C2D9182560920044F2B2 /* Resources */,
+				24765F3E0D7E406D859D38E2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QMBParallaxScrollView-Sample";
+			productName = "QMBParallaxScrollView-Sample";
+			productReference = E288C2DB182560920044F2B2 /* QMBParallaxScrollView-Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E288C2FE182560920044F2B2 /* QMBParallaxScrollView-SampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E288C313182560920044F2B2 /* Build configuration list for PBXNativeTarget "QMBParallaxScrollView-SampleTests" */;
+			buildPhases = (
+				E288C2FB182560920044F2B2 /* Sources */,
+				E288C2FC182560920044F2B2 /* Frameworks */,
+				E288C2FD182560920044F2B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E288C305182560920044F2B2 /* PBXTargetDependency */,
+			);
+			name = "QMBParallaxScrollView-SampleTests";
+			productName = "QMBParallaxScrollView-SampleTests";
+			productReference = E288C2FF182560920044F2B2 /* QMBParallaxScrollView-SampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E288C2D3182560920044F2B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Toni Möckel";
+				TargetAttributes = {
+					E288C2FE182560920044F2B2 = {
+						TestTargetID = E288C2DA182560920044F2B2;
+					};
+				};
+			};
+			buildConfigurationList = E288C2D6182560920044F2B2 /* Build configuration list for PBXProject "QMBParallaxScrollView-Sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E288C2D2182560920044F2B2;
+			productRefGroup = E288C2DC182560920044F2B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E288C2DA182560920044F2B2 /* QMBParallaxScrollView-Sample */,
+				E288C2FE182560920044F2B2 /* QMBParallaxScrollView-SampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E288C2D9182560920044F2B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E288C33E1825B0D60044F2B2 /* 8.png in Resources */,
+				E288C33D1825B0D60044F2B2 /* 7.png in Resources */,
+				E288C3381825B0D60044F2B2 /* 2.png in Resources */,
+				E288C2F5182560920044F2B2 /* Main_iPad.storyboard in Resources */,
+				E288C33F1825B0D60044F2B2 /* 9.png in Resources */,
+				E288C2FA182560920044F2B2 /* Images.xcassets in Resources */,
+				E288C2F2182560920044F2B2 /* Main_iPhone.storyboard in Resources */,
+				E288C33C1825B0D60044F2B2 /* 6.png in Resources */,
+				E288C3401825B0D60044F2B2 /* 10.png in Resources */,
+				E288C33A1825B0D60044F2B2 /* 4.png in Resources */,
+				E288C2E9182560920044F2B2 /* InfoPlist.strings in Resources */,
+				E288C33B1825B0D60044F2B2 /* 5.png in Resources */,
+				E288C3391825B0D60044F2B2 /* 3.png in Resources */,
+				E288C3371825B0D60044F2B2 /* 1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E288C2FD182560920044F2B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E288C30B182560920044F2B2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24765F3E0D7E406D859D38E2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6396F9AC2784658A2482438 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E288C2D7182560920044F2B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E288C346182714330044F2B2 /* UIViewController+QMBParallaxScrollViewController.m in Sources */,
+				E288C2F8182560920044F2B2 /* ViewController.m in Sources */,
+				E288C32018257BCD0044F2B2 /* SampleScrollViewController.m in Sources */,
+				E288C32318257BDE0044F2B2 /* SampleTopViewController.m in Sources */,
+				E288C3431826B5A10044F2B2 /* SampleTableViewController.m in Sources */,
+				E288C31D182576470044F2B2 /* QMBParallaxScrollViewController.m in Sources */,
+				E288C2EF182560920044F2B2 /* AppDelegate.m in Sources */,
+				E288C2EB182560920044F2B2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E288C2FB182560920044F2B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E288C30D182560920044F2B2 /* QMBParallaxScrollView_SampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E288C305182560920044F2B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E288C2DA182560920044F2B2 /* QMBParallaxScrollView-Sample */;
+			targetProxy = E288C304182560920044F2B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E288C2E7182560920044F2B2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E288C2E8182560920044F2B2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E288C2F0182560920044F2B2 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E288C2F1182560920044F2B2 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		E288C2F3182560920044F2B2 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E288C2F4182560920044F2B2 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		E288C309182560920044F2B2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E288C30A182560920044F2B2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E288C30E182560920044F2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E288C30F182560920044F2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E288C311182560920044F2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC7E6630317544A2ABF428A4 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QMBParallaxScrollView-Sample/QMBParallaxScrollView-Sample-Prefix.pch";
+				INFOPLIST_FILE = "QMBParallaxScrollView-Sample/QMBParallaxScrollView-Sample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E288C312182560920044F2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC7E6630317544A2ABF428A4 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QMBParallaxScrollView-Sample/QMBParallaxScrollView-Sample-Prefix.pch";
+				INFOPLIST_FILE = "QMBParallaxScrollView-Sample/QMBParallaxScrollView-Sample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E288C314182560920044F2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QMBParallaxScrollView-Sample.app/QMBParallaxScrollView-Sample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QMBParallaxScrollView-Sample/QMBParallaxScrollView-Sample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "QMBParallaxScrollView-SampleTests/QMBParallaxScrollView-SampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E288C315182560920044F2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QMBParallaxScrollView-Sample.app/QMBParallaxScrollView-Sample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QMBParallaxScrollView-Sample/QMBParallaxScrollView-Sample-Prefix.pch";
+				INFOPLIST_FILE = "QMBParallaxScrollView-SampleTests/QMBParallaxScrollView-SampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E288C2D6182560920044F2B2 /* Build configuration list for PBXProject "QMBParallaxScrollView-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E288C30E182560920044F2B2 /* Debug */,
+				E288C30F182560920044F2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E288C310182560920044F2B2 /* Build configuration list for PBXNativeTarget "QMBParallaxScrollView-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E288C311182560920044F2B2 /* Debug */,
+				E288C312182560920044F2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E288C313182560920044F2B2 /* Build configuration list for PBXNativeTarget "QMBParallaxScrollView-SampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E288C314182560920044F2B2 /* Debug */,
+				E288C315182560920044F2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E288C2D3182560920044F2B2 /* Project object */;
+}
