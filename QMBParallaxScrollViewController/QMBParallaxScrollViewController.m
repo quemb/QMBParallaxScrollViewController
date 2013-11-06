@@ -8,9 +8,12 @@
 
 #import "QMBParallaxScrollViewController.h"
 
-@interface QMBParallaxScrollViewController ()
+@interface QMBParallaxScrollViewController (){
+    BOOL _isAnimating;
+}
 
 @property (nonatomic, strong) UITapGestureRecognizer *topViewGestureRecognizer;
+@property (nonatomic, strong) UITapGestureRecognizer *bottomViewGestureRecognizer;
 @property (nonatomic, strong) UIScrollView *parallaxScrollView;
 @property (nonatomic, assign) CGFloat currentTopHeight;
 @property (nonatomic, strong, readwrite) UIViewController * topViewController;
@@ -74,6 +77,10 @@
     [self.topViewController.view setUserInteractionEnabled:YES];
     [self enableTapGestureTopView:YES];
     
+    self.bottomViewGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleBottomTouch:)];
+    [self.bottomViewGestureRecognizer setNumberOfTouchesRequired:1];
+    [self.bottomViewController.view setUserInteractionEnabled:YES];
+    
     //Register Observer
     [_parallaxScrollView addObserver:self forKeyPath:@"contentOffset" options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld) context:nil];
     [self addObserver:self forKeyPath:@"state" options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld) context:nil];
@@ -94,6 +101,11 @@
         }
         if ([self.delegate respondsToSelector:@selector(parallaxScrollViewController:didChangeState:)]){
             [(id<QMBParallaxScrollViewControllerDelegate>) self.delegate parallaxScrollViewController:self didChangeState:[[change valueForKey:NSKeyValueChangeNewKey] intValue]];
+        }
+        if (self.state == QMBParallaxStateFullSize){
+            [self.bottomViewController.view addGestureRecognizer:self.bottomViewGestureRecognizer];
+        }else {
+            [self.bottomViewGestureRecognizer.view removeGestureRecognizer:self.bottomViewGestureRecognizer];
         }
     }
 }
@@ -135,11 +147,16 @@
      * if top-view height is full screen
      * dont resize top view -> Fullscreen Mode
      */
-    if (_fullHeight <= _currentTopHeight){
-       // return;
+    if (self.state == QMBParallaxStateFullSize){
+        if (_parallaxScrollView.contentOffset.y>-_fullHeight && !_isAnimating){
+            [self showFullTopView:NO];
+        }
+        if (_parallaxScrollView.contentOffset.y<-_fullHeight && !_isAnimating){
+            [self showFullTopView:YES];
+        }
+        return;
     }
     
-    NSLog(@"%f",_parallaxScrollView.contentOffset.y);
     if (_parallaxScrollView.contentOffset.y < -_overPanHeight && self.state != QMBParallaxStateFullSize){
         
         [self performOptionalDelegateSelector:@selector(parallaxScrollViewController:didOverPanTopView:) withObject:self andObject:self.topViewController.view];
@@ -231,13 +248,20 @@
     
 }
 
+- (void) handleBottomTouch:(id)sender {
+    
+    [self showFullTopView:NO];
+    
+}
+
 - (void) showFullTopView:(BOOL)show {
 
-    
+    _isAnimating = YES;
     [UIView animateWithDuration:.3f animations:^{
         [self changeTopHeight:show ?  _fullHeight : _topHeight];
     } completion:^(BOOL finished) {
         
+        _isAnimating = NO;
         //Set touch listenrer bottom view
         self.state = show ? QMBParallaxStateFullSize : QMBParallaxStateVisible;
     }];

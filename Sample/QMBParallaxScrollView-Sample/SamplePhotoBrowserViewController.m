@@ -26,10 +26,8 @@
     [self.photos addObject:[UIImage imageNamed:@"2.jpg"]];
     [self.photos addObject:[UIImage imageNamed:@"3.jpg"]];
     [self.photos addObject:[UIImage imageNamed:@"4.jpg"]];
+
     [super viewDidLoad];
-	
-    // Create array of `MWPhoto` objects
-    
 }
 
 - (NSArray *) arrayWithImages

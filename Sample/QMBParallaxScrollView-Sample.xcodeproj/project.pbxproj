@@ -31,6 +31,7 @@
 		E2EC4E771829B76D0072FB19 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2EC4E731829B76D0072FB19 /* 3.jpg */; };
 		E2EC4E781829B76D0072FB19 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2EC4E741829B76D0072FB19 /* 4.jpg */; };
 		E2EC4E7B1829B84B0072FB19 /* ParallaxMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EC4E7A1829B84B0072FB19 /* ParallaxMapViewController.m */; };
+		E2EC4E7E182B02EB0072FB19 /* ParallaxPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EC4E7D182B02EB0072FB19 /* ParallaxPhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,8 @@
 		E2EC4E741829B76D0072FB19 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4.jpg; path = Resources/ParallaxBackgrounds/4.jpg; sourceTree = "<group>"; };
 		E2EC4E791829B84B0072FB19 /* ParallaxMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxMapViewController.h; sourceTree = "<group>"; };
 		E2EC4E7A1829B84B0072FB19 /* ParallaxMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxMapViewController.m; sourceTree = "<group>"; };
+		E2EC4E7C182B02EB0072FB19 /* ParallaxPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxPhotoViewController.h; sourceTree = "<group>"; };
+		E2EC4E7D182B02EB0072FB19 /* ParallaxPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxPhotoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				E288C2F7182560920044F2B2 /* ViewController.m */,
 				E2EC4E791829B84B0072FB19 /* ParallaxMapViewController.h */,
 				E2EC4E7A1829B84B0072FB19 /* ParallaxMapViewController.m */,
+				E2EC4E7C182B02EB0072FB19 /* ParallaxPhotoViewController.h */,
+				E2EC4E7D182B02EB0072FB19 /* ParallaxPhotoViewController.m */,
 				E288C2F9182560920044F2B2 /* Images.xcassets */,
 				E288C32B1825B0880044F2B2 /* Resources */,
 				E288C2E5182560920044F2B2 /* Supporting Files */,
@@ -299,6 +304,7 @@
 				E2EC4E7B1829B84B0072FB19 /* ParallaxMapViewController.m in Sources */,
 				E288C346182714330044F2B2 /* UIViewController+QMBParallaxScrollViewController.m in Sources */,
 				E288C2F8182560920044F2B2 /* ViewController.m in Sources */,
+				E2EC4E7E182B02EB0072FB19 /* ParallaxPhotoViewController.m in Sources */,
 				E2EC4E6D1829B2BD0072FB19 /* SamplePhotoBrowserViewController.m in Sources */,
 				E288C32018257BCD0044F2B2 /* SampleScrollViewController.m in Sources */,
 				E288C32318257BDE0044F2B2 /* SampleTopViewController.m in Sources */,

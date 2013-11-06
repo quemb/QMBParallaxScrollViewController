@@ -20,15 +20,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    SamplePhotoBrowserViewController *sampleTopViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SamplePhotoBrowserViewController"];
+    UIViewController *sampleMapViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MapViewController"];
     
     SampleScrollViewController *sampleBottomViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SampleScrollViewController"];
     
-    [self setupWithTopViewController:sampleTopViewController andTopHeight:200 andBottomViewController:sampleBottomViewController];
+    [self setupWithTopViewController:sampleMapViewController andTopHeight:200 andBottomViewController:sampleBottomViewController];
     
-    self.fullHeight = 400.0f;
+    self.fullHeight = self.view.frame.size.height-50.0f;
 }
 
-
+- (IBAction) dismiss:(id)sender{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

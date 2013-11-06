@@ -10,4 +10,6 @@
 
 @interface ParallaxMapViewController : QMBParallaxScrollViewController
 
+- (IBAction) dismiss:(id)sender;
+
 @end

@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="kNe-aI-dB1">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="URc-ll-dre">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="kNe-aI-dB1" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ouh-3Y-rQb">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="LRB-vw-bvo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l1c-v3-tax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-441" y="-94"/>
+        </scene>
+        <!--View Controller - Parallax Sample-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -17,7 +37,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </view>
-                    <navigationItem key="navigationItem" id="82o-By-0Xq"/>
+                    <navigationItem key="navigationItem" title="Parallax Sample" id="82o-By-0Xq"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -41,10 +61,35 @@
             </objects>
             <point key="canvasLocation" x="426" y="-150"/>
         </scene>
-        <!--Parallax Map View Controller-->
+        <!--Parallax Photo View Controller - Sample Image Browser-->
+        <scene sceneID="1o2-IH-r53">
+            <objects>
+                <viewController id="bGI-0R-JmJ" customClass="ParallaxPhotoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TVu-rQ-3sK"/>
+                        <viewControllerLayoutGuide type="bottom" id="PGC-uv-i2D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R7u-z9-GK6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sample Image Browser" id="KAQ-1J-DNF">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="vtL-Wy-OqX">
+                            <connections>
+                                <action selector="dismiss:" destination="bGI-0R-JmJ" id="wbw-rs-hhN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJU-Wh-9Hv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1705" y="-150"/>
+        </scene>
+        <!--Parallax Map View Controller - Map View Sample-->
         <scene sceneID="1ii-eB-8tl">
             <objects>
-                <viewController storyboardIdentifier="ParallaxMapViewController" id="0Fy-b6-Tpq" customClass="ParallaxMapViewController" sceneMemberID="viewController">
+                <viewController id="0Fy-b6-Tpq" customClass="ParallaxMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ila-Te-gKw"/>
                         <viewControllerLayoutGuide type="bottom" id="tbS-Ps-ymT"/>
@@ -54,11 +99,17 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mxQ-zL-bfj"/>
+                    <navigationItem key="navigationItem" title="Map View Sample" id="mxQ-zL-bfj">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="UPv-cO-u6s">
+                            <connections>
+                                <action selector="dismiss:" destination="0Fy-b6-Tpq" id="ewM-Ot-8UI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mE6-Gr-o1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1269" y="-157"/>
+            <point key="canvasLocation" x="1705" y="-911"/>
         </scene>
         <!--Sample Photo Browser View Controller-->
         <scene sceneID="Y3D-se-Otr">
@@ -69,7 +120,7 @@
                         <viewControllerLayoutGuide type="bottom" id="KNe-7u-15z"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="seP-ya-djd" customClass="KIImagePager">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -82,12 +133,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JyD-1f-ECw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2082" y="-150"/>
+            <point key="canvasLocation" x="2090" y="-150"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sy4-u3-lYb">
+            <objects>
+                <navigationController storyboardIdentifier="ParallaxMapViewController" definesPresentationContext="YES" id="6mw-wH-fui" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mkg-bN-BDo">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0Fy-b6-Tpq" kind="relationship" relationship="rootViewController" id="ot8-zU-QW4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ER5-NN-bTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1269" y="-911"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="J5N-Sm-Fdm">
             <objects>
-                <viewController id="0eB-vi-DQG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="0eB-vi-DQG" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mcj-uo-dRY"/>
                         <viewControllerLayoutGuide type="bottom" id="z0S-MM-kUD"/>
@@ -119,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeD-bm-wWi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1666" y="-157"/>
+            <point key="canvasLocation" x="2122" y="-869"/>
         </scene>
         <!--Sample Table View Controller-->
         <scene sceneID="VeM-9I-hVg">
@@ -161,43 +227,32 @@
         <!--Sample Scroll View Controller-->
         <scene sceneID="qqM-fY-i48">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aZL-q3-YaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="SampleScrollViewController" automaticallyAdjustsScrollViewInsets="NO" id="D9D-Eh-0yV" customClass="SampleScrollViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GRx-IX-RpH"/>
-                        <viewControllerLayoutGuide type="bottom" id="pRr-nP-24e"/>
-                    </layoutGuides>
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" id="XkQ-dE-XbI">
+                    <webView key="view" contentMode="scaleToFill" id="s20-Vf-lAU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoD-65-v3A">
-                                <rect key="frame" x="137" y="50" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Close">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="closeButtonTouchUpInside:" destination="D9D-Eh-0yV" eventType="touchUpInside" id="jx5-Dl-qjg"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
-                                <size key="value" width="320" height="600"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                        <connections>
-                            <outlet property="delegate" destination="D9D-Eh-0yV" id="9gH-pn-dK7"/>
-                        </connections>
-                    </scrollView>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </webView>
                     <toolbarItems/>
-                    <connections>
-                        <outlet property="scrollView" destination="XkQ-dE-XbI" id="w7u-oV-iyE"/>
-                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aZL-q3-YaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1666" y="278"/>
+            <point key="canvasLocation" x="890" y="183"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="n3m-TM-NV5">
+            <objects>
+                <navigationController storyboardIdentifier="ParallaxPhotoViewController" definesPresentationContext="YES" id="MTE-L8-YEy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9xj-A5-aIU">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bGI-0R-JmJ" kind="relationship" relationship="rootViewController" id="SyO-wd-SDq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRY-SN-Ggc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1269" y="-150"/>
         </scene>
     </scenes>
     <resources>

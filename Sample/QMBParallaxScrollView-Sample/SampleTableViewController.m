@@ -73,10 +73,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    UIViewController *controller;
     if (indexPath.section == 0){
-        UINavigationController *navCont = [self.storyboard instantiateViewControllerWithIdentifier:@"ParallaxMapViewController"];
-        [self presentViewController:navCont animated:YES completion:nil];
+        controller = [self.storyboard instantiateViewControllerWithIdentifier:@"ParallaxMapViewController"];
+        
+    }else {
+        controller = [self.storyboard instantiateViewControllerWithIdentifier:@"ParallaxPhotoViewController"];
     }
+    
+    [self presentViewController:controller animated:YES completion:nil];
     
 }
 

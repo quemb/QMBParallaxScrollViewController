@@ -16,13 +16,16 @@
 
 - (void)awakeFromNib{
     
+    
 }
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
+    UIWebView *webVIew = (UIWebView *)self.view;
+    [webVIew loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://github.com/quemb/QMBParallaxScrollViewController"]]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,7 +37,8 @@
 #pragma mark - QMBParallaxScrollViewHolder
 
 - (UIScrollView *)scrollViewForParallexController{
-    return _scrollView;
+    UIWebView *webVIew = (UIWebView *)self.view;
+    return webVIew.scrollView;
 }
 
 - (IBAction)closeButtonTouchUpInside:(id)sender{

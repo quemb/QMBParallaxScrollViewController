@@ -41,7 +41,9 @@
 #pragma mark - QMBParallaxScrollViewControllerDelegate
 
 - (void)parallaxScrollViewController:(QMBParallaxScrollViewController *)controller didChangeState:(QMBParallaxState)state{
-    NSLog(@"state changed: %d",state);
+    
+    [self.navigationController setNavigationBarHidden:self.state == QMBParallaxStateFullSize animated:YES];
+    
 }
 
 - (void)parallaxScrollViewController:(QMBParallaxScrollViewController *)controller didOverPanTopView:(UIView *)topView{
