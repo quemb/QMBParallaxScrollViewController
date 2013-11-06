@@ -37,12 +37,8 @@
     return _scrollView;
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    NSLog(@"didScroll");
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    NSLog(@"scrollViewDidEndDecelerating");
+- (IBAction)closeButtonTouchUpInside:(id)sender{
+    [self.parentViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

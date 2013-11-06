@@ -17,12 +17,6 @@
 
 @implementation ViewController
 
-- (void)awakeFromNib{
-    [super awakeFromNib];
-
-    
-    
-}
 
 - (void)viewDidLoad
 {
@@ -31,11 +25,30 @@
     SampleTableViewController *sampleTableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SampleTableViewController"];
     
     SampleTopViewController *sampleTopViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SampleTopViewController"];
+    self.delegate = self;
     
     [self setupWithTopViewController:sampleTopViewController andTopHeight:200 andBottomViewController:sampleTableViewController];
     
+    [self setOverPanHeight:330];
     
+    [self setNeedsStatusBarAppearanceUpdate];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
 
+#pragma mark - QMBParallaxScrollViewControllerDelegate
+
+- (void)parallaxScrollViewController:(QMBParallaxScrollViewController *)controller didChangeState:(QMBParallaxState)state{
+    NSLog(@"state changed: %d",state);
+}
+
+- (void)parallaxScrollViewController:(QMBParallaxScrollViewController *)controller didOverPanTopView:(UIView *)topView{
+    NSLog(@"didOverPanTopView");
+}
+
+- (void)parallaxScrollViewController:(QMBParallaxScrollViewController *)controller didTapTopViewWithSender:(id)sender{
+    NSLog(@"didTapTopView");
+}
 @end

@@ -1,0 +1,1 @@
+../../KIImagePager/KIImagePager/KIImagePager/KIImagePager.h

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-REKit.xcscheme</key>
+		<key>Pods-KIImagePager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8E9E1687CCF64E37BBB839B7</key>
+		<key>0F03C70EC7DB4872AA03380C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FF0EBD0AE0FD4FCD918702F6</key>
+		<key>47C9259C08CA45F093617835</key>
 		<dict>
 			<key>primary</key>
 			<true/>

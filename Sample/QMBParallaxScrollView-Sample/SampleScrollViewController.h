@@ -12,4 +12,6 @@
 @interface SampleScrollViewController : UIViewController<QMBParallaxScrollViewHolder, UIScrollViewDelegate>
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 
+- (IBAction)closeButtonTouchUpInside:(id)sender;
+
 @end

@@ -20,7 +20,11 @@
 {
     [super viewDidLoad];
 
-    self.edgesForExtendedLayout = UIRectEdgeNone;
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleDefault;
 }
 
 @end

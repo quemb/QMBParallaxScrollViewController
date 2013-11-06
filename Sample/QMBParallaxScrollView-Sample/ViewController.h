@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "QMBParallaxScrollViewController.h"
 
-@interface ViewController : QMBParallaxScrollViewController
+@interface ViewController : QMBParallaxScrollViewController<QMBParallaxScrollViewControllerDelegate>
 
 @end

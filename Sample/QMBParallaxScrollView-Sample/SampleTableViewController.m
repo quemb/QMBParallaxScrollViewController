@@ -29,8 +29,14 @@
 {
     [super viewDidLoad];
 
-    _data = @[@[@{@"name":@"ScrollView"},@{@"name":@"ScrollView"},@{@"name":@"ScrollView"},@{@"name":@"ScrollView"},@{@"name":@"ScrollView"},@{@"name":@"ScrollView"},@{@"name":@"ScrollView"},@{@"name":@"ScrollView"},@{@"name":@"ScrollView"}],@[@{@"name":@"ScrollView"}]];
+    _data = @[@[@{@"name":@"Map Sample"}],@[@{@"name":@"Gallery Sample"}]];
     
+    
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,6 +69,15 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     return @"Section";
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.section == 0){
+        UINavigationController *navCont = [self.storyboard instantiateViewControllerWithIdentifier:@"ParallaxMapViewController"];
+        [self presentViewController:navCont animated:YES completion:nil];
+    }
+    
 }
 
 /*

@@ -1,10 +1,10 @@
 PODS:
-  - REKit (1.0.2)
+  - KIImagePager (1.1.0)
 
 DEPENDENCIES:
-  - REKit (~> 1.0.2)
+  - KIImagePager (~> 1.1.0)
 
 SPEC CHECKSUMS:
-  REKit: 3b6b4228e39d7c120f2d33ecc06b2cc3fef2faf2
+  KIImagePager: f822b86d14f352140a39b5bb1f4e65d4697c7335
 
 COCOAPODS: 0.26.2

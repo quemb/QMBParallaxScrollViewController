@@ -18,38 +18,20 @@
 		E288C2F5182560920044F2B2 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E288C2F3182560920044F2B2 /* Main_iPad.storyboard */; };
 		E288C2F8182560920044F2B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E288C2F7182560920044F2B2 /* ViewController.m */; };
 		E288C2FA182560920044F2B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E288C2F9182560920044F2B2 /* Images.xcassets */; };
-		E288C301182560920044F2B2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E288C300182560920044F2B2 /* XCTest.framework */; };
-		E288C302182560920044F2B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E288C2DE182560920044F2B2 /* Foundation.framework */; };
-		E288C303182560920044F2B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E288C2E2182560920044F2B2 /* UIKit.framework */; };
-		E288C30B182560920044F2B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E288C309182560920044F2B2 /* InfoPlist.strings */; };
-		E288C30D182560920044F2B2 /* QMBParallaxScrollView_SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E288C30C182560920044F2B2 /* QMBParallaxScrollView_SampleTests.m */; };
 		E288C31D182576470044F2B2 /* QMBParallaxScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E288C31C182576470044F2B2 /* QMBParallaxScrollViewController.m */; };
 		E288C32018257BCD0044F2B2 /* SampleScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E288C31F18257BCD0044F2B2 /* SampleScrollViewController.m */; };
 		E288C32318257BDE0044F2B2 /* SampleTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E288C32218257BDE0044F2B2 /* SampleTopViewController.m */; };
 		E288C32A18259F740044F2B2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E288C32918259F740044F2B2 /* MapKit.framework */; };
-		E288C3371825B0D60044F2B2 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C32D1825B0D60044F2B2 /* 1.png */; };
-		E288C3381825B0D60044F2B2 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C32E1825B0D60044F2B2 /* 2.png */; };
-		E288C3391825B0D60044F2B2 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C32F1825B0D60044F2B2 /* 3.png */; };
-		E288C33A1825B0D60044F2B2 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C3301825B0D60044F2B2 /* 4.png */; };
-		E288C33B1825B0D60044F2B2 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C3311825B0D60044F2B2 /* 5.png */; };
-		E288C33C1825B0D60044F2B2 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C3321825B0D60044F2B2 /* 6.png */; };
-		E288C33D1825B0D60044F2B2 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C3331825B0D60044F2B2 /* 7.png */; };
-		E288C33E1825B0D60044F2B2 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C3341825B0D60044F2B2 /* 8.png */; };
-		E288C33F1825B0D60044F2B2 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C3351825B0D60044F2B2 /* 9.png */; };
-		E288C3401825B0D60044F2B2 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = E288C3361825B0D60044F2B2 /* 10.png */; };
 		E288C3431826B5A10044F2B2 /* SampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E288C3421826B5A10044F2B2 /* SampleTableViewController.m */; };
 		E288C346182714330044F2B2 /* UIViewController+QMBParallaxScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E288C345182714330044F2B2 /* UIViewController+QMBParallaxScrollViewController.m */; };
+		E2EC4E6A1829AD570072FB19 /* NGC6559.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2EC4E691829AD570072FB19 /* NGC6559.jpg */; };
+		E2EC4E6D1829B2BD0072FB19 /* SamplePhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EC4E6C1829B2BD0072FB19 /* SamplePhotoBrowserViewController.m */; };
+		E2EC4E751829B76D0072FB19 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2EC4E711829B76D0072FB19 /* 1.jpg */; };
+		E2EC4E761829B76D0072FB19 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2EC4E721829B76D0072FB19 /* 2.jpg */; };
+		E2EC4E771829B76D0072FB19 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2EC4E731829B76D0072FB19 /* 3.jpg */; };
+		E2EC4E781829B76D0072FB19 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2EC4E741829B76D0072FB19 /* 4.jpg */; };
+		E2EC4E7B1829B84B0072FB19 /* ParallaxMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EC4E7A1829B84B0072FB19 /* ParallaxMapViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E288C304182560920044F2B2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E288C2D3182560920044F2B2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E288C2DA182560920044F2B2;
-			remoteInfo = "QMBParallaxScrollView-Sample";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		52FD83BCDDE94D7380F4B8F5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,11 +51,7 @@
 		E288C2F6182560920044F2B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E288C2F7182560920044F2B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E288C2F9182560920044F2B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E288C2FF182560920044F2B2 /* QMBParallaxScrollView-SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QMBParallaxScrollView-SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E288C300182560920044F2B2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E288C308182560920044F2B2 /* QMBParallaxScrollView-SampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QMBParallaxScrollView-SampleTests-Info.plist"; sourceTree = "<group>"; };
-		E288C30A182560920044F2B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E288C30C182560920044F2B2 /* QMBParallaxScrollView_SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QMBParallaxScrollView_SampleTests.m; sourceTree = "<group>"; };
 		E288C31B182576470044F2B2 /* QMBParallaxScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMBParallaxScrollViewController.h; path = ../QMBParallaxScrollViewController/QMBParallaxScrollViewController.h; sourceTree = "<group>"; };
 		E288C31C182576470044F2B2 /* QMBParallaxScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMBParallaxScrollViewController.m; path = ../QMBParallaxScrollViewController/QMBParallaxScrollViewController.m; sourceTree = "<group>"; };
 		E288C31E18257BCD0044F2B2 /* SampleScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleScrollViewController.h; sourceTree = "<group>"; };
@@ -81,20 +59,19 @@
 		E288C32118257BDE0044F2B2 /* SampleTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTopViewController.h; sourceTree = "<group>"; };
 		E288C32218257BDE0044F2B2 /* SampleTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTopViewController.m; sourceTree = "<group>"; };
 		E288C32918259F740044F2B2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		E288C32D1825B0D60044F2B2 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = Resources/ParallaxBackgrounds/1.png; sourceTree = "<group>"; };
-		E288C32E1825B0D60044F2B2 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = Resources/ParallaxBackgrounds/2.png; sourceTree = "<group>"; };
-		E288C32F1825B0D60044F2B2 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = Resources/ParallaxBackgrounds/3.png; sourceTree = "<group>"; };
-		E288C3301825B0D60044F2B2 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = Resources/ParallaxBackgrounds/4.png; sourceTree = "<group>"; };
-		E288C3311825B0D60044F2B2 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 5.png; path = Resources/ParallaxBackgrounds/5.png; sourceTree = "<group>"; };
-		E288C3321825B0D60044F2B2 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 6.png; path = Resources/ParallaxBackgrounds/6.png; sourceTree = "<group>"; };
-		E288C3331825B0D60044F2B2 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 7.png; path = Resources/ParallaxBackgrounds/7.png; sourceTree = "<group>"; };
-		E288C3341825B0D60044F2B2 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 8.png; path = Resources/ParallaxBackgrounds/8.png; sourceTree = "<group>"; };
-		E288C3351825B0D60044F2B2 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 9.png; path = Resources/ParallaxBackgrounds/9.png; sourceTree = "<group>"; };
-		E288C3361825B0D60044F2B2 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 10.png; path = Resources/ParallaxBackgrounds/10.png; sourceTree = "<group>"; };
 		E288C3411826B5A10044F2B2 /* SampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewController.h; sourceTree = "<group>"; };
 		E288C3421826B5A10044F2B2 /* SampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewController.m; sourceTree = "<group>"; };
 		E288C344182714330044F2B2 /* UIViewController+QMBParallaxScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+QMBParallaxScrollViewController.h"; path = "../QMBParallaxScrollViewController/UIViewController+QMBParallaxScrollViewController.h"; sourceTree = "<group>"; };
 		E288C345182714330044F2B2 /* UIViewController+QMBParallaxScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+QMBParallaxScrollViewController.m"; path = "../QMBParallaxScrollViewController/UIViewController+QMBParallaxScrollViewController.m"; sourceTree = "<group>"; };
+		E2EC4E691829AD570072FB19 /* NGC6559.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = NGC6559.jpg; path = Resources/ParallaxBackgrounds/NGC6559.jpg; sourceTree = "<group>"; };
+		E2EC4E6B1829B2BD0072FB19 /* SamplePhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamplePhotoBrowserViewController.h; sourceTree = "<group>"; };
+		E2EC4E6C1829B2BD0072FB19 /* SamplePhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplePhotoBrowserViewController.m; sourceTree = "<group>"; };
+		E2EC4E711829B76D0072FB19 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = Resources/ParallaxBackgrounds/1.jpg; sourceTree = "<group>"; };
+		E2EC4E721829B76D0072FB19 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = Resources/ParallaxBackgrounds/2.jpg; sourceTree = "<group>"; };
+		E2EC4E731829B76D0072FB19 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = Resources/ParallaxBackgrounds/3.jpg; sourceTree = "<group>"; };
+		E2EC4E741829B76D0072FB19 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4.jpg; path = Resources/ParallaxBackgrounds/4.jpg; sourceTree = "<group>"; };
+		E2EC4E791829B84B0072FB19 /* ParallaxMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxMapViewController.h; sourceTree = "<group>"; };
+		E2EC4E7A1829B84B0072FB19 /* ParallaxMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxMapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,16 +87,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E288C2FC182560920044F2B2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E288C301182560920044F2B2 /* XCTest.framework in Frameworks */,
-				E288C303182560920044F2B2 /* UIKit.framework in Frameworks */,
-				E288C302182560920044F2B2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -128,7 +95,6 @@
 			children = (
 				E288C31A182575DD0044F2B2 /* QMBParallaxScrollViewController */,
 				E288C2E4182560920044F2B2 /* QMBParallaxScrollView-Sample */,
-				E288C306182560920044F2B2 /* QMBParallaxScrollView-SampleTests */,
 				E288C2DD182560920044F2B2 /* Frameworks */,
 				E288C2DC182560920044F2B2 /* Products */,
 				DC7E6630317544A2ABF428A4 /* Pods.xcconfig */,
@@ -139,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				E288C2DB182560920044F2B2 /* QMBParallaxScrollView-Sample.app */,
-				E288C2FF182560920044F2B2 /* QMBParallaxScrollView-SampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +131,8 @@
 				E288C2F3182560920044F2B2 /* Main_iPad.storyboard */,
 				E288C2F6182560920044F2B2 /* ViewController.h */,
 				E288C2F7182560920044F2B2 /* ViewController.m */,
+				E2EC4E791829B84B0072FB19 /* ParallaxMapViewController.h */,
+				E2EC4E7A1829B84B0072FB19 /* ParallaxMapViewController.m */,
 				E288C2F9182560920044F2B2 /* Images.xcassets */,
 				E288C32B1825B0880044F2B2 /* Resources */,
 				E288C2E5182560920044F2B2 /* Supporting Files */,
@@ -175,6 +142,8 @@
 				E288C32218257BDE0044F2B2 /* SampleTopViewController.m */,
 				E288C3411826B5A10044F2B2 /* SampleTableViewController.h */,
 				E288C3421826B5A10044F2B2 /* SampleTableViewController.m */,
+				E2EC4E6B1829B2BD0072FB19 /* SamplePhotoBrowserViewController.h */,
+				E2EC4E6C1829B2BD0072FB19 /* SamplePhotoBrowserViewController.m */,
 			);
 			path = "QMBParallaxScrollView-Sample";
 			sourceTree = "<group>";
@@ -186,24 +155,6 @@
 				E288C2E7182560920044F2B2 /* InfoPlist.strings */,
 				E288C2EA182560920044F2B2 /* main.m */,
 				E288C2EC182560920044F2B2 /* QMBParallaxScrollView-Sample-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E288C306182560920044F2B2 /* QMBParallaxScrollView-SampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				E288C30C182560920044F2B2 /* QMBParallaxScrollView_SampleTests.m */,
-				E288C307182560920044F2B2 /* Supporting Files */,
-			);
-			path = "QMBParallaxScrollView-SampleTests";
-			sourceTree = "<group>";
-		};
-		E288C307182560920044F2B2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E288C308182560920044F2B2 /* QMBParallaxScrollView-SampleTests-Info.plist */,
-				E288C309182560920044F2B2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -230,16 +181,11 @@
 		E288C32C1825B0940044F2B2 /* ParallaxBackgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				E288C32D1825B0D60044F2B2 /* 1.png */,
-				E288C32E1825B0D60044F2B2 /* 2.png */,
-				E288C32F1825B0D60044F2B2 /* 3.png */,
-				E288C3301825B0D60044F2B2 /* 4.png */,
-				E288C3311825B0D60044F2B2 /* 5.png */,
-				E288C3321825B0D60044F2B2 /* 6.png */,
-				E288C3331825B0D60044F2B2 /* 7.png */,
-				E288C3341825B0D60044F2B2 /* 8.png */,
-				E288C3351825B0D60044F2B2 /* 9.png */,
-				E288C3361825B0D60044F2B2 /* 10.png */,
+				E2EC4E711829B76D0072FB19 /* 1.jpg */,
+				E2EC4E721829B76D0072FB19 /* 2.jpg */,
+				E2EC4E731829B76D0072FB19 /* 3.jpg */,
+				E2EC4E741829B76D0072FB19 /* 4.jpg */,
+				E2EC4E691829AD570072FB19 /* NGC6559.jpg */,
 			);
 			name = ParallaxBackgrounds;
 			sourceTree = "<group>";
@@ -266,24 +212,6 @@
 			productReference = E288C2DB182560920044F2B2 /* QMBParallaxScrollView-Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E288C2FE182560920044F2B2 /* QMBParallaxScrollView-SampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E288C313182560920044F2B2 /* Build configuration list for PBXNativeTarget "QMBParallaxScrollView-SampleTests" */;
-			buildPhases = (
-				E288C2FB182560920044F2B2 /* Sources */,
-				E288C2FC182560920044F2B2 /* Frameworks */,
-				E288C2FD182560920044F2B2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E288C305182560920044F2B2 /* PBXTargetDependency */,
-			);
-			name = "QMBParallaxScrollView-SampleTests";
-			productName = "QMBParallaxScrollView-SampleTests";
-			productReference = E288C2FF182560920044F2B2 /* QMBParallaxScrollView-SampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -292,11 +220,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Toni Möckel";
-				TargetAttributes = {
-					E288C2FE182560920044F2B2 = {
-						TestTargetID = E288C2DA182560920044F2B2;
-					};
-				};
 			};
 			buildConfigurationList = E288C2D6182560920044F2B2 /* Build configuration list for PBXProject "QMBParallaxScrollView-Sample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -312,7 +235,6 @@
 			projectRoot = "";
 			targets = (
 				E288C2DA182560920044F2B2 /* QMBParallaxScrollView-Sample */,
-				E288C2FE182560920044F2B2 /* QMBParallaxScrollView-SampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -322,28 +244,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E288C33E1825B0D60044F2B2 /* 8.png in Resources */,
-				E288C33D1825B0D60044F2B2 /* 7.png in Resources */,
-				E288C3381825B0D60044F2B2 /* 2.png in Resources */,
 				E288C2F5182560920044F2B2 /* Main_iPad.storyboard in Resources */,
-				E288C33F1825B0D60044F2B2 /* 9.png in Resources */,
 				E288C2FA182560920044F2B2 /* Images.xcassets in Resources */,
+				E2EC4E761829B76D0072FB19 /* 2.jpg in Resources */,
 				E288C2F2182560920044F2B2 /* Main_iPhone.storyboard in Resources */,
-				E288C33C1825B0D60044F2B2 /* 6.png in Resources */,
-				E288C3401825B0D60044F2B2 /* 10.png in Resources */,
-				E288C33A1825B0D60044F2B2 /* 4.png in Resources */,
+				E2EC4E751829B76D0072FB19 /* 1.jpg in Resources */,
 				E288C2E9182560920044F2B2 /* InfoPlist.strings in Resources */,
-				E288C33B1825B0D60044F2B2 /* 5.png in Resources */,
-				E288C3391825B0D60044F2B2 /* 3.png in Resources */,
-				E288C3371825B0D60044F2B2 /* 1.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E288C2FD182560920044F2B2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E288C30B182560920044F2B2 /* InfoPlist.strings in Resources */,
+				E2EC4E781829B76D0072FB19 /* 4.jpg in Resources */,
+				E2EC4E6A1829AD570072FB19 /* NGC6559.jpg in Resources */,
+				E2EC4E771829B76D0072FB19 /* 3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,8 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2EC4E7B1829B84B0072FB19 /* ParallaxMapViewController.m in Sources */,
 				E288C346182714330044F2B2 /* UIViewController+QMBParallaxScrollViewController.m in Sources */,
 				E288C2F8182560920044F2B2 /* ViewController.m in Sources */,
+				E2EC4E6D1829B2BD0072FB19 /* SamplePhotoBrowserViewController.m in Sources */,
 				E288C32018257BCD0044F2B2 /* SampleScrollViewController.m in Sources */,
 				E288C32318257BDE0044F2B2 /* SampleTopViewController.m in Sources */,
 				E288C3431826B5A10044F2B2 /* SampleTableViewController.m in Sources */,
@@ -398,23 +309,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E288C2FB182560920044F2B2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E288C30D182560920044F2B2 /* QMBParallaxScrollView_SampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E288C305182560920044F2B2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E288C2DA182560920044F2B2 /* QMBParallaxScrollView-Sample */;
-			targetProxy = E288C304182560920044F2B2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E288C2E7182560920044F2B2 /* InfoPlist.strings */ = {
@@ -439,14 +334,6 @@
 				E288C2F4182560920044F2B2 /* Base */,
 			);
 			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		E288C309182560920044F2B2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E288C30A182560920044F2B2 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -556,48 +443,6 @@
 			};
 			name = Release;
 		};
-		E288C314182560920044F2B2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QMBParallaxScrollView-Sample.app/QMBParallaxScrollView-Sample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QMBParallaxScrollView-Sample/QMBParallaxScrollView-Sample-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "QMBParallaxScrollView-SampleTests/QMBParallaxScrollView-SampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		E288C315182560920044F2B2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QMBParallaxScrollView-Sample.app/QMBParallaxScrollView-Sample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QMBParallaxScrollView-Sample/QMBParallaxScrollView-Sample-Prefix.pch";
-				INFOPLIST_FILE = "QMBParallaxScrollView-SampleTests/QMBParallaxScrollView-SampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -615,15 +460,6 @@
 			buildConfigurations = (
 				E288C311182560920044F2B2 /* Debug */,
 				E288C312182560920044F2B2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E288C313182560920044F2B2 /* Build configuration list for PBXNativeTarget "QMBParallaxScrollView-SampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E288C314182560920044F2B2 /* Debug */,
-				E288C315182560920044F2B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
