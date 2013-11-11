@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Toni Moeckel" => "tonimoeckel@gmail.com" }
 
-  s.source       = { :git => "https://github.com/quemb/QMBParallaxScrollViewController", :tag => "0.1" }
+  s.source       = { :git => "https://github.com/quemb/QMBParallaxScrollViewController.git", :tag => "0.1" }
   s.source_files = "QMBParallaxScrollViewController/*.{h,m}"
 
   s.platform     = :ios, '6.0'
