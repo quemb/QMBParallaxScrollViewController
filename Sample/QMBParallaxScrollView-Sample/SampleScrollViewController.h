@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "QMBParallaxScrollViewController.h"
 
-@interface SampleScrollViewController : UIViewController<QMBParallaxScrollViewHolder, UIScrollViewDelegate>
+@interface SampleScrollViewController : UIViewController<QMBParallaxScrollViewHolder, UIScrollViewDelegate, UIWebViewDelegate>
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
 
 - (IBAction)closeButtonTouchUpInside:(id)sender;
 

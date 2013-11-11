@@ -1,0 +1,5 @@
+#include "Pods-FXBlurView.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/FXBlurView" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/FXBlurView" "${PODS_ROOT}/Headers/KIImagePager"
+OTHER_LDFLAGS = -ObjC ${PODS_FXBLURVIEW_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}

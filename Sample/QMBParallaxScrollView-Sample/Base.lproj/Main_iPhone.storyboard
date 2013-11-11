@@ -13,9 +13,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ouh-3Y-rQb">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="LRB-vw-bvo"/>
@@ -30,8 +27,8 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oU3-7B-fkX"/>
-                        <viewControllerLayoutGuide type="bottom" id="5ot-4D-Tas"/>
+                        <viewControllerLayoutGuide type="top" id="7IP-Re-LhQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sja-6h-qhK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -56,6 +53,9 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="FX3-Qr-sRy" id="8ja-W8-3v8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBH-Kq-q8t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,11 +66,11 @@
             <objects>
                 <viewController id="bGI-0R-JmJ" customClass="ParallaxPhotoViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="TVu-rQ-3sK"/>
-                        <viewControllerLayoutGuide type="bottom" id="PGC-uv-i2D"/>
+                        <viewControllerLayoutGuide type="top" id="y3S-DP-mbZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wwl-YW-bFL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="R7u-z9-GK6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -91,8 +91,8 @@
             <objects>
                 <viewController id="0Fy-b6-Tpq" customClass="ParallaxMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ila-Te-gKw"/>
-                        <viewControllerLayoutGuide type="bottom" id="tbS-Ps-ymT"/>
+                        <viewControllerLayoutGuide type="top" id="fen-h0-bjw"/>
+                        <viewControllerLayoutGuide type="bottom" id="92f-nQ-pmt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WaJ-Bs-6e7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -116,8 +116,8 @@
             <objects>
                 <viewController storyboardIdentifier="SamplePhotoBrowserViewController" id="zbe-S1-Mo2" customClass="SamplePhotoBrowserViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hyX-Lw-JFW"/>
-                        <viewControllerLayoutGuide type="bottom" id="KNe-7u-15z"/>
+                        <viewControllerLayoutGuide type="top" id="Xmu-gd-dmu"/>
+                        <viewControllerLayoutGuide type="bottom" id="yYB-mE-4Gh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="seP-ya-djd" customClass="KIImagePager">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
@@ -154,31 +154,10 @@
         <scene sceneID="J5N-Sm-Fdm">
             <objects>
                 <viewController storyboardIdentifier="MapViewController" id="0eB-vi-DQG" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mcj-uo-dRY"/>
-                        <viewControllerLayoutGuide type="bottom" id="z0S-MM-kUD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="f4u-KH-DvI">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="ixc-mh-U37">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ixc-mh-U37">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ixc-mh-U37" firstAttribute="top" secondItem="f4u-KH-DvI" secondAttribute="top" id="Drm-12-aTQ"/>
-                            <constraint firstItem="ixc-mh-U37" firstAttribute="leading" secondItem="f4u-KH-DvI" secondAttribute="leading" id="LOM-A1-BHX"/>
-                            <constraint firstItem="z0S-MM-kUD" firstAttribute="top" secondItem="ixc-mh-U37" secondAttribute="bottom" id="TO6-5I-Oeu"/>
-                            <constraint firstAttribute="trailing" secondItem="ixc-mh-U37" secondAttribute="trailing" id="XhY-Dr-Xgh"/>
-                            <constraint firstItem="ixc-mh-U37" firstAttribute="leading" secondItem="f4u-KH-DvI" secondAttribute="leading" id="ZyL-Mk-IOW"/>
-                            <constraint firstAttribute="trailing" secondItem="ixc-mh-U37" secondAttribute="trailing" id="n92-MM-jAV"/>
-                            <constraint firstAttribute="bottom" secondItem="ixc-mh-U37" secondAttribute="bottom" id="qip-6V-Jdy"/>
-                            <constraint firstItem="ixc-mh-U37" firstAttribute="top" secondItem="mcj-uo-dRY" secondAttribute="bottom" id="sRP-Rd-KDU"/>
-                        </constraints>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </mapView>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -228,12 +207,39 @@
         <scene sceneID="qqM-fY-i48">
             <objects>
                 <viewController storyboardIdentifier="SampleScrollViewController" automaticallyAdjustsScrollViewInsets="NO" id="D9D-Eh-0yV" customClass="SampleScrollViewController" sceneMemberID="viewController">
-                    <webView key="view" contentMode="scaleToFill" id="s20-Vf-lAU">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mxq-Gy-BQs"/>
+                        <viewControllerLayoutGuide type="bottom" id="I7G-iJ-14X"/>
+                    </layoutGuides>
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" id="BIz-jt-Gmk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </webView>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sample Scroll View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eO-tp-Gnz">
+                                <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Use any UIScrollView " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bk2-8v-8GF">
+                                <rect key="frame" x="20" y="69" width="280" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W4H-89-asI">
+                                <rect key="frame" x="20" y="60" width="300" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.94856295620437958" alpha="1" colorSpace="calibratedWhite"/>
+                    </scrollView>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="scrollView" destination="BIz-jt-Gmk" id="u3v-7P-Xq5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZL-q3-YaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -243,7 +249,7 @@
         <scene sceneID="n3m-TM-NV5">
             <objects>
                 <navigationController storyboardIdentifier="ParallaxPhotoViewController" definesPresentationContext="YES" id="MTE-L8-YEy" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9xj-A5-aIU">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="9xj-A5-aIU">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

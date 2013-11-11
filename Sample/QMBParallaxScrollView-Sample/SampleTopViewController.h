@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SampleTopViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

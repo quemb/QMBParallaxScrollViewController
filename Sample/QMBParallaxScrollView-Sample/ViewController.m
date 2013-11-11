@@ -8,8 +8,8 @@
 
 #import "ViewController.h"
 #import "SampleScrollViewController.h"
-#import "SampleTopViewController.h"
 #import "SampleTableViewController.h"
+#import "FXBlurView.h"
 
 @interface ViewController ()
 
@@ -29,7 +29,9 @@
     
     [self setupWithTopViewController:sampleTopViewController andTopHeight:200 andBottomViewController:sampleTableViewController];
     
-    [self setOverPanHeight:330];
+    [self setOverPanHeight:250];
+    
+    [sampleTopViewController.imageView.image blurredImageWithRadius:10.0 iterations:1.0 tintColor:[UIColor blackColor]];
     
     [self setNeedsStatusBarAppearanceUpdate];
 }
@@ -42,15 +44,16 @@
 
 - (void)parallaxScrollViewController:(QMBParallaxScrollViewController *)controller didChangeState:(QMBParallaxState)state{
     
+    NSLog(@"didChangeState %d",state);
     [self.navigationController setNavigationBarHidden:self.state == QMBParallaxStateFullSize animated:YES];
     
 }
 
-- (void)parallaxScrollViewController:(QMBParallaxScrollViewController *)controller didOverPanTopView:(UIView *)topView{
-    NSLog(@"didOverPanTopView");
+- (void)parallaxScrollViewController:(QMBParallaxScrollViewController *)controller didChangeTopHeight:(CGFloat)height{
+    [self.topViewController.view setAlpha:MAX(.7,height/self.fullHeight)];
 }
 
-- (void)parallaxScrollViewController:(QMBParallaxScrollViewController *)controller didTapTopViewWithSender:(id)sender{
-    NSLog(@"didTapTopView");
+- (void)parallaxScrollViewController:(QMBParallaxScrollViewController *)controller didChangeGesture:(QMBParallaxGesture)newGesture oldGesture:(QMBParallaxGesture)oldGesture{
+    
 }
 @end

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "QMBParallaxScrollViewController.h"
+#import "SampleTopViewController.h"
 
 @interface ViewController : QMBParallaxScrollViewController<QMBParallaxScrollViewControllerDelegate>
 

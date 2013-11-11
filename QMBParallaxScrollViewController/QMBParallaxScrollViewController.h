@@ -16,9 +16,10 @@ typedef NS_ENUM(NSUInteger, QMBParallaxState) {
     QMBParallaxStateHidden = 2,
 };
 
-typedef NS_ENUM(NSUInteger, QMBParallaxGestures) {
-    QMBParallaxGesturesTopViewTap = 0,
-    QMBParallaxGesturesTopViewOverPanned = 1,
+typedef NS_ENUM(NSUInteger, QMBParallaxGesture) {
+    QMBParallaxGestureTopViewTap = 0,
+    QMBParallaxGestureScrollsDown = 1,
+    QMBParallaxGestureScrollsUp = 2,
 };
 
 @protocol QMBParallaxScrollViewHolder <NSObject>
@@ -35,17 +36,17 @@ typedef NS_ENUM(NSUInteger, QMBParallaxGestures) {
  * Callback when the user tapped the top-view 
  * sender is usually the UITapGestureRecognizer instance
  */
-- (void) parallaxScrollViewController:(QMBParallaxScrollViewController *) controller didTapTopViewWithSender:(id)sender;
-
-/**
- * Callback when the user is scrolling over the "overPanHeight" border
- */
-- (void) parallaxScrollViewController:(QMBParallaxScrollViewController *) controller didOverPanTopView:(UIView *)topView;
+- (void) parallaxScrollViewController:(QMBParallaxScrollViewController *) controller didChangeGesture:(QMBParallaxGesture)newGesture oldGesture:(QMBParallaxGesture)oldGesture;
 
 /**
  * Callback when the state changed to QMBParallaxStateFullSize, QMBParallaxStateVisible or QMBParallaxStateHidden
  */
 - (void) parallaxScrollViewController:(QMBParallaxScrollViewController *) controller didChangeState:(QMBParallaxState) state;
+
+/**
+ * Callback when the top height changed
+ */
+- (void) parallaxScrollViewController:(QMBParallaxScrollViewController *) controller didChangeTopHeight:(CGFloat) height;
 
 @end
 
@@ -67,6 +68,8 @@ typedef NS_ENUM(NSUInteger, QMBParallaxGestures) {
 // inits
 -(void) setupWithTopViewController:(UIViewController *)topViewController andTopHeight:(CGFloat)height andBottomViewController:(UIViewController<QMBParallaxScrollViewHolder> *)bottomViewController;
 
+
+- (void)parallaxScrollViewDidScroll:(CGPoint)contentOffset;
 // configs
 
 /**
