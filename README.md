@@ -3,7 +3,7 @@
 - Add a parallax top view to any UIScrollView
 - Inspired by apps like foursquare or path
 
-![Demo](http://www.quemb.com/tl_files/downloads/github/QMBParallaxScrollViewController/ParallaxSample.gif);
+![Demo](http://www.quemb.com/tl_files/downloads/github/QMBParallaxScrollViewController/ParallaxSample.gif)
 
 
 ## Features ##
