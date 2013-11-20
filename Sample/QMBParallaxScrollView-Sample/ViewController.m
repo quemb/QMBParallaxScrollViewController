@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "SampleScrollViewController.h"
 #import "SampleTableViewController.h"
-#import "FXBlurView.h"
 
 @interface ViewController ()
 
@@ -30,8 +29,8 @@
     [self setupWithTopViewController:sampleTopViewController andTopHeight:200 andBottomViewController:sampleTableViewController];
     
     [self setOverPanHeight:250];
-    
-    [sampleTopViewController.imageView.image blurredImageWithRadius:10.0 iterations:1.0 tintColor:[UIColor blackColor]];
+    //[self setEnableSectionSupport:YES]; //set NO if you don't use section as there will be faster scrolling support
+
     
     [self setNeedsStatusBarAppearanceUpdate];
 }

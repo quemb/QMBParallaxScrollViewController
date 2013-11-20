@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
 
-    _data = @[@[@{@"name":@"Map Sample"}],@[@{@"name":@"Gallery Sample"}]];
+    _data = @[@[@{@"name":@"Map Sample"}],@[@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"}]];
     
     
     [self setNeedsStatusBarAppearanceUpdate];
