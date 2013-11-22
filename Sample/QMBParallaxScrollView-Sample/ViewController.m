@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SampleScrollViewController.h"
 #import "SampleTableViewController.h"
+#import "SamplePhotoBrowserViewController.h"
 
 @interface ViewController ()
 
@@ -17,9 +18,9 @@
 @implementation ViewController
 
 
-- (void)viewDidLoad
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super viewDidLoad];
+    [super viewDidAppear:animated];
     
     SampleTableViewController *sampleTableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SampleTableViewController"];
     
@@ -28,11 +29,7 @@
     
     [self setupWithTopViewController:sampleTopViewController andTopHeight:200 andBottomViewController:sampleTableViewController];
     
-    [self setOverPanHeight:250];
-    //[self setEnableSectionSupport:YES]; //set NO if you don't use section as there will be faster scrolling support
 
-    
-    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle{
@@ -44,12 +41,12 @@
 - (void)parallaxScrollViewController:(QMBParallaxScrollViewController *)controller didChangeState:(QMBParallaxState)state{
     
     NSLog(@"didChangeState %d",state);
-    [self.navigationController setNavigationBarHidden:self.state == QMBParallaxStateFullSize animated:YES];
+    //[self.navigationController setNavigationBarHidden:self.state == QMBParallaxStateFullSize animated:YES];
     
 }
 
 - (void)parallaxScrollViewController:(QMBParallaxScrollViewController *)controller didChangeTopHeight:(CGFloat)height{
-    [self.topViewController.view setAlpha:MAX(.7,height/self.fullHeight)];
+    
 }
 
 - (void)parallaxScrollViewController:(QMBParallaxScrollViewController *)controller didChangeGesture:(QMBParallaxGesture)newGesture oldGesture:(QMBParallaxGesture)oldGesture{

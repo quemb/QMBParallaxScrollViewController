@@ -16,23 +16,21 @@
 
 @implementation SampleTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.scrollView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
 
     _data = @[@[@{@"name":@"Map Sample"}],@[@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"}]];
     
     
     [self setNeedsStatusBarAppearanceUpdate];
+    
+    [self.tableView reloadData];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle{

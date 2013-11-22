@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		640ED9E4619742A79300A1E2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FD83BCDDE94D7380F4B8F5 /* libPods.a */; };
+		E22F4D6F183D54C600307EF3 /* WrappedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E22F4D6E183D54C600307EF3 /* WrappedTableView.m */; };
 		E288C2DF182560920044F2B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E288C2DE182560920044F2B2 /* Foundation.framework */; };
 		E288C2E1182560920044F2B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E288C2E0182560920044F2B2 /* CoreGraphics.framework */; };
 		E288C2E3182560920044F2B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E288C2E2182560920044F2B2 /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* Begin PBXFileReference section */
 		52FD83BCDDE94D7380F4B8F5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7E6630317544A2ABF428A4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E22F4D6D183D54C600307EF3 /* WrappedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrappedTableView.h; sourceTree = "<group>"; };
+		E22F4D6E183D54C600307EF3 /* WrappedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrappedTableView.m; sourceTree = "<group>"; };
 		E288C2DB182560920044F2B2 /* QMBParallaxScrollView-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QMBParallaxScrollView-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E288C2DE182560920044F2B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E288C2E0182560920044F2B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -146,6 +149,8 @@
 				E288C3421826B5A10044F2B2 /* SampleTableViewController.m */,
 				E2EC4E6B1829B2BD0072FB19 /* SamplePhotoBrowserViewController.h */,
 				E2EC4E6C1829B2BD0072FB19 /* SamplePhotoBrowserViewController.m */,
+				E22F4D6D183D54C600307EF3 /* WrappedTableView.h */,
+				E22F4D6E183D54C600307EF3 /* WrappedTableView.m */,
 			);
 			path = "QMBParallaxScrollView-Sample";
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 				E2EC4E7B1829B84B0072FB19 /* ParallaxMapViewController.m in Sources */,
 				E288C346182714330044F2B2 /* UIViewController+QMBParallaxScrollViewController.m in Sources */,
 				E288C2F8182560920044F2B2 /* ViewController.m in Sources */,
+				E22F4D6F183D54C600307EF3 /* WrappedTableView.m in Sources */,
 				E2EC4E7E182B02EB0072FB19 /* ParallaxPhotoViewController.m in Sources */,
 				E2EC4E6D1829B2BD0072FB19 /* SamplePhotoBrowserViewController.m in Sources */,
 				E288C32018257BCD0044F2B2 /* SampleScrollViewController.m in Sources */,

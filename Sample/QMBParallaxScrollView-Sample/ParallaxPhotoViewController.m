@@ -30,7 +30,6 @@
     [self setupWithTopViewController:self.sampleTopViewController andTopHeight:200 andBottomViewController:sampleBottomViewController];
     
     self.delegate = self;
-    self.fullHeight = self.view.frame.size.height-50.0f;
 }
 
 - (IBAction) dismiss:(id)sender{

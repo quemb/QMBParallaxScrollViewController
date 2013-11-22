@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "QMBParallaxScrollViewController.h"
 
-@interface SampleTableViewController : UITableViewController<QMBParallaxScrollViewHolder>
+@interface SampleTableViewController : UIViewController<QMBParallaxScrollViewHolder, UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 
 @end

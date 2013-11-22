@@ -52,7 +52,7 @@ typedef NS_ENUM(NSUInteger, QMBParallaxGesture) {
 
 
 
-@interface QMBParallaxScrollViewController : UIViewController<UIGestureRecognizerDelegate>
+@interface QMBParallaxScrollViewController : UIViewController<UIGestureRecognizerDelegate, UIScrollViewDelegate>
 
 @property (nonatomic, strong) id<QMBParallaxScrollViewControllerDelegate> delegate;
 
@@ -60,16 +60,42 @@ typedef NS_ENUM(NSUInteger, QMBParallaxGesture) {
 @property (nonatomic, strong, readonly) UIViewController<QMBParallaxScrollViewHolder> * bottomViewController;
 
 @property (nonatomic, assign, readonly) CGFloat topHeight;
-@property (nonatomic, assign, setter = setFullHeight:) CGFloat fullHeight;
-@property (nonatomic, assign, setter = setOverPanHeight:) CGFloat overPanHeight;
+@property (nonatomic, assign, setter = setMaxHeight:) CGFloat maxHeight;
+
+/**
+ * Set the height of the border (margin from top) that has to be scrolled over to expand the background view.
+ * Default: 1.3 * topHeight
+ */
+@property (nonatomic, assign, setter = setMaxHeightBorder:) CGFloat maxHeightBorder;
+
+/**
+ * Set the height of the border (margin from top) that has to be scrolled under to minimize the background view
+ * Default: fullHeight - 5.0f
+ */
+@property (nonatomic, assign, setter = setMinHeightBorder:) CGFloat minHeightBorder;
+
+/**
+ * To enable section support for UITableViews, default: true if UITableView is client scrollview
+ * TODO: this option will disable decelerated scrolling (known bug)
+ */
+@property (nonatomic, assign) BOOL enableSectionSupport;
 
 @property (nonatomic, readonly) QMBParallaxState state;
+
+/**
+ * The Parallax Scrollview that embeds the bottom (forground) view
+ */
+@property (nonatomic, readonly) UIScrollView *parallaxScrollView;
+
+/**
+ * Use the scrollview delegate for custom actions
+ */
+@property (nonatomic, weak) id<UIScrollViewDelegate> scrollViewDelegate;
 
 // inits
 -(void) setupWithTopViewController:(UIViewController *)topViewController andTopHeight:(CGFloat)height andBottomViewController:(UIViewController<QMBParallaxScrollViewHolder> *)bottomViewController;
 
 
-- (void)parallaxScrollViewDidScroll:(CGPoint)contentOffset;
 // configs
 
 /**

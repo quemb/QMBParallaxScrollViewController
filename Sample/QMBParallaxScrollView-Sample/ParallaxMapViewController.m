@@ -26,7 +26,7 @@
     
     [self setupWithTopViewController:sampleMapViewController andTopHeight:200 andBottomViewController:sampleBottomViewController];
     
-    self.fullHeight = self.view.frame.size.height-50.0f;
+    self.maxHeight = self.view.frame.size.height-50.0f;
 }
 
 - (IBAction) dismiss:(id)sender{
