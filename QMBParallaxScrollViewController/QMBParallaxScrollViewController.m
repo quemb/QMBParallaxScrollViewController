@@ -60,7 +60,6 @@
     _maxHeight = self.view.frame.size.height-50.0f;
     [self setMaxHeightBorder:1.5f*_topHeight];
     [self setMinHeightBorder:_maxHeight-20.0f];
-    NSLog(@"%f",_maxHeightBorder);
     
     [self addChildViewController:self.topViewController];
     _backgroundView = topViewController.view;
@@ -73,7 +72,6 @@
     _foregroundScrollView.backgroundColor = [UIColor clearColor];
     if ([self respondsToSelector:@selector(topLayoutGuide)]){
         [self.foregroundScrollView setContentInset:UIEdgeInsetsMake(self.topLayoutGuide.length, 0, self.bottomLayoutGuide.length, 0)];
-        
     }
     _foregroundScrollView.delegate = self;
     [_foregroundScrollView setAlwaysBounceVertical:YES];
