@@ -258,6 +258,10 @@
                          }else {
                              self.state = QMBParallaxStateFullSize;
                          }
+                         
+                         if ([self.delegate respondsToSelector:@selector(parallaxScrollViewController:didChangeState:)]){
+                             [self.delegate parallaxScrollViewController:self didChangeState:self.state];
+                         }
                      }];
     
     
