@@ -243,7 +243,7 @@
     
     [UIView animateWithDuration:.3
                           delay:0.0
-                        options:UIViewAnimationOptionCurveEaseInOut
+                        options:UIViewAnimationOptionCurveEaseInOut|UIViewKeyframeAnimationOptionBeginFromCurrentState
                      animations:^{
                          
                          [self changeTopHeight:show ?  _maxHeight : _startTopHeight];
