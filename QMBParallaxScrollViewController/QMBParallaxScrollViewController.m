@@ -28,6 +28,10 @@
 @property (nonatomic, strong, readwrite) UIViewController<QMBParallaxScrollViewHolder> * bottomViewController;
 
 @property (nonatomic, assign, readwrite) CGFloat topHeight;
+
+@property (nonatomic, assign, readwrite) CGFloat initialMaxHeightBorder;
+@property (nonatomic, assign, readwrite) CGFloat initialMinHeightBorder;
+
 @property (nonatomic, readwrite) QMBParallaxState state;
 @property (nonatomic, readwrite) QMBParallaxGesture lastGesture;
 
@@ -280,17 +284,18 @@
                          
                          if (self.state == QMBParallaxStateFullSize){
                              self.state = QMBParallaxStateVisible;
-                         }else {
+                             self.maxHeightBorder = self.initialMaxHeightBorder;
+                         } else {
                              self.state = QMBParallaxStateFullSize;
+                             self.minHeightBorder = self.initialMinHeightBorder;
                          }
                          
                          if ([self.delegate respondsToSelector:@selector(parallaxScrollViewController:didChangeState:)]){
                              [self.delegate parallaxScrollViewController:self didChangeState:self.state];
                          }
                      }];
-    
-    
 }
+
 
 - (void) changeTopHeight:(CGFloat) height{
     
@@ -307,15 +312,13 @@
 #pragma mark - Borders
 
 - (void)setMaxHeightBorder:(CGFloat)maxHeightBorder{
-    
     _maxHeightBorder = MAX(_topHeight,maxHeightBorder);
-    
+    self.initialMaxHeightBorder = maxHeightBorder;
 }
 
 - (void)setMinHeightBorder:(CGFloat)minHeightBorder{
-    
     _minHeightBorder = MIN(_maxHeight,minHeightBorder);
-    
+    self.initialMinHeightBorder = minHeightBorder;
 }
 
 @end
