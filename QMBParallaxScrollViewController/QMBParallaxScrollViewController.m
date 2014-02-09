@@ -248,6 +248,9 @@
     self.backgroundView.frame =
     CGRectMake(0.0f,0.0f,self.view.frame.size.width,_topHeight+(-1)*self.foregroundScrollView.contentOffset.y);
     
+    [self.backgroundView layoutIfNeeded];
+
+    
     if (_isAnimating){
         return;
     }
