@@ -33,7 +33,7 @@ typedef NS_ENUM(NSUInteger, QMBParallaxGesture) {
 @optional
 
 /**
- * Callback when the user tapped the top-view 
+ * Callback when the user tapped the top-view
  * sender is usually the UITapGestureRecognizer instance
  */
 - (void) parallaxScrollViewController:(QMBParallaxScrollViewController *) controller didChangeGesture:(QMBParallaxGesture)newGesture oldGesture:(QMBParallaxGesture)oldGesture;
@@ -57,7 +57,7 @@ typedef NS_ENUM(NSUInteger, QMBParallaxGesture) {
 @property (nonatomic, strong) id<QMBParallaxScrollViewControllerDelegate> delegate;
 
 @property (nonatomic, strong, readonly) UIViewController * topViewController;
-@property (nonatomic, strong, readonly) UIViewController<QMBParallaxScrollViewHolder> * bottomViewController;
+@property (nonatomic, strong, readonly) UIViewController * bottomViewController;
 
 @property (nonatomic, assign, readonly) CGFloat topHeight;
 @property (nonatomic, assign, setter = setMaxHeight:) CGFloat maxHeight;
@@ -93,7 +93,7 @@ typedef NS_ENUM(NSUInteger, QMBParallaxGesture) {
 @property (nonatomic, weak) id<UIScrollViewDelegate> scrollViewDelegate;
 
 // inits
--(void) setupWithTopViewController:(UIViewController *)topViewController andTopHeight:(CGFloat)height andBottomViewController:(UIViewController<QMBParallaxScrollViewHolder> *)bottomViewController;
+-(void) setupWithTopViewController:(UIViewController *)topViewController andTopHeight:(CGFloat)height andBottomViewController:(UIViewController *)bottomViewController;
 
 
 // configs
