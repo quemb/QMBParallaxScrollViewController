@@ -71,7 +71,7 @@
     _topHeight = height;
     _startTopHeight = _topHeight;
     _maxHeight = self.view.frame.size.height-50.0f;
-    [self setMaxHeightBorder:1.5f*_topHeight];
+    [self setMaxHeightBorder:MAX(1.5f*_topHeight, 300.0f)];
     [self setMinHeightBorder:_maxHeight-20.0f];
     
     [self addChildViewController:self.topViewController];
