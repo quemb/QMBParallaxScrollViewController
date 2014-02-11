@@ -17,21 +17,21 @@
 @implementation SampleScrollViewController
 
 - (void)awakeFromNib{
-    
-    
+
+
 }
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-    
+
+
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,7 +47,7 @@
 
 #pragma mark - QMBParallaxScrollViewHolder
 
-- (UIScrollView *)scrollViewForParallexController{
+- (UIScrollView *)scrollViewForParallaxController{
 
     return self.scrollView;
 }

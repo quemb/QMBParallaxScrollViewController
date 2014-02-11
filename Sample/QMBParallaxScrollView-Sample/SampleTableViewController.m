@@ -21,15 +21,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     self.scrollView.translatesAutoresizingMaskIntoConstraints = NO;
     self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
 
     _data = @[@[@{@"name":@"Map Sample"}],@[@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"},@{@"name":@"Gallery Sample"}]];
-    
-    
+
+
     [self setNeedsStatusBarAppearanceUpdate];
-    
+
     [self.tableView reloadData];
 }
 
@@ -59,9 +59,9 @@
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
+
     [cell.textLabel setText:[[[_data objectAtIndex:indexPath.section] objectAtIndex:indexPath.row] objectForKey:@"name"]];
-    
+
     return cell;
 }
 
@@ -70,17 +70,17 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+
     UIViewController *controller;
     if (indexPath.section == 0){
         controller = [self.storyboard instantiateViewControllerWithIdentifier:@"ParallaxMapViewController"];
-        
+
     }else {
         controller = [self.storyboard instantiateViewControllerWithIdentifier:@"ParallaxPhotoViewController"];
     }
-    
+
     [self presentViewController:controller animated:YES completion:nil];
-    
+
 }
 
 /*
@@ -99,10 +99,10 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
+    }
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
 }
 */
 
@@ -134,7 +134,7 @@
 
  */
 
-- (UIScrollView *)scrollViewForParallexController{
+- (UIScrollView *)scrollViewForParallaxController{
     return self.tableView;
 }
 
