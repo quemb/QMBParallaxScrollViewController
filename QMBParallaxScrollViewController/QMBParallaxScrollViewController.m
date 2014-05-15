@@ -90,6 +90,7 @@
     _foregroundScrollView.delegate = self;
     [_foregroundScrollView setAlwaysBounceVertical:YES];
     _foregroundScrollView.frame = self.view.frame;
+    _foregroundScrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [_foregroundScrollView addSubview:_foregroundView];
     
     [self.view addSubview:_foregroundScrollView];
