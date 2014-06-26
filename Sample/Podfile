@@ -1,3 +1,4 @@
 platform :ios, '6.0'
 
 pod 'KIImagePager', '~> 1.1.0'
+pod 'FXBlurView', '~> 1.6'
