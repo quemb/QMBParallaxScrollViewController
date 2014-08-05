@@ -95,7 +95,7 @@
     [self.view addSubview:_foregroundScrollView];
     [self.bottomViewController didMoveToParentViewController:self];
     
-    [self.view addSubview:_backgroundView];
+    [self.view insertSubview:_backgroundView belowSubview:_foregroundScrollView];
     [self.topViewController didMoveToParentViewController:self];
     
     [self addGestureReconizer];
